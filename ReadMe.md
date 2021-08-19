@@ -10,7 +10,7 @@ rosrun tf2_web_republisher tf2_web_republisher
 * 연구실의 desktop PC의 경우 alias bridge 및 rosbridge_websocket.launch를 수정해놓았기 때문에 bridge만 입력해도 된다   
 
 
-**2. turtlebot에 ssh로 접속하여 turtlebot3_bringup rs_camera를 실행한다**
+**2. turtlebot에 ssh로 접속하여 turtlebot3_bringup과 rs_camera를 실행한다**
 ---------------------------------------------------------------------
 > 이 때 turtlebot의 MASTER_URI가 a.a.a.a여야 한다   
 
