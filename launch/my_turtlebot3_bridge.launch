@@ -1,4 +1,0 @@
-<launch>
-  <include file="$(find turtlebot3_slam)/launch/turtlebot3_slam.launch" />
-  <node name="my_turtlebot3_bridge" pkg="my_turtlebot3" type="my_turtlebot3_bridge.py" output="screen" />
-</launch>
