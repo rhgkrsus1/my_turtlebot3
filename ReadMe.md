@@ -18,6 +18,7 @@ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 roslaunch realsense2_camera rs_camera.launch   
 * 연구실의 turtlebot의 경우 pi@192.168.0.39로 접속하고 비밀번호는 turtlebot이며 alias로 bringup과 rscam만 입력해도 된다
 
+
 **3. GUI를 실행시킬 PC에서 my_turtlebot3_bridge를 실행한다**
 --------------------------------------------------------
 > 이 때 my_turtlebot3_bridge.py의 client = roslibpy.Ros(host='a.a.a.a', port=9090)여야 한다   
