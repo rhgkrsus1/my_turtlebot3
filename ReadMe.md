@@ -23,5 +23,4 @@ roslaunch realsense2_camera rs_camera.launch
 --------------------------------------------------------
 > 이 때 my_turtlebot3_bridge.py의 client = roslibpy.Ros(host='a.a.a.a', port=9090)여야 한다   
 
-roslaunch my_turtlebot3 my_turtlebot3_bridge.launch   
-* turtlebot3_slam도 같이 실행된다
+rosrun my_turtlebot3 my_turtlebot3_bridge.py
