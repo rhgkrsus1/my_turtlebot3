@@ -17,8 +17,13 @@ from PyQt5.QtGui import *
 from PyQt5 import uic
 
 ############################## global variables ##############################
+
+import rospkg
+rp = rospkg.RosPack()
+package_path = rp.get_path('my_turtlebot3')
+
 form_class = uic.loadUiType(
-    "/home/rirolab/catkin_ws/src/my_turtlebot3/src/my_gui.ui")[0]
+    package_path+"/src/my_gui.ui")[0]
 
 
 BURGER_MAX_LIN_VEL = 0.22
@@ -31,7 +36,7 @@ LIN_VEL_STEP_SIZE = 0.01
 ANG_VEL_STEP_SIZE = 0.1
 
 
-client = roslibpy.Ros(host='192.168.0.12', port=9090)
+client = roslibpy.Ros(host='192.168.0.30', port=9090)
 
 cmdvelPub = roslibpy.Topic(
     client, '/cmd_vel', 'geometry_msgs/Twist')
@@ -265,7 +270,7 @@ class MyWindow(QMainWindow, form_class):
     @pyqtSlot(np.ndarray)
     def mapView(self, map):
         icon = cv2.imread(
-            '/home/rirolab/catkin_ws/src/my_turtlebot3/src/Turtlebot3_logo.png', cv2.IMREAD_UNCHANGED)
+            package_path+'/src/Turtlebot3_logo.png', cv2.IMREAD_UNCHANGED)
         icon = cv2.resize(icon, dsize=(12, 12), interpolation=cv2.INTER_AREA)
         h, w, c = icon.shape
         if (self.rot != None):

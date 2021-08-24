@@ -1,0 +1,31 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/aries/catkin_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/aries/catkin_ws/src/arips_local_planner/include/**",
+        "/home/aries/catkin_ws3/src/vision_opencv/cv_bridge/include/**",
+        "/home/aries/catkin_ws/src/riro_robot/riro_dependencies/gazebo_grasp_plugin/include/**",
+        "/home/aries/catkin_ws/src/riro_robot/riro_dependencies/gazebo_version_helpers/include/**",
+        "/home/aries/catkin_ws3/src/vision_opencv/image_geometry/include/**",
+        "/home/aries/catkin_ws/src/riro_robot/riro_msgs/include/**",
+        "/home/aries/catkin_ws/src/riro_robot/roboticsgroup_gazebo_plugins/include/**",
+        "/home/aries/catkin_ws/src/riro_robot/riro_dependencies/robotiq/robotiq_s_gripper/robotiq_ethercat/include/**",
+        "/home/aries/catkin_ws/src/riro_robot/riro_dependencies/robotiq/robotiq_force_torque_sensor/include/**",
+        "/home/aries/catkin_ws/src/riro_robot/riro_dependencies/robotiq/robotiq_gazebo/include/**",
+        "/home/aries/catkin_ws/src/riro_robot/riro_dependencies/robotiq/robotiq_s_model_articulated_gazebo_plugins/include/**",
+        "/home/aries/catkin_ws/src/riro_robot/riro_dependencies/robotiq/robotiq_s_gripper/robotiq_s_model_control/include/**",
+        "/home/aries/catkin_ws/src/riro_robot/riro_dependencies/robotiq/robotiq_s_model_utils/robotiq_s_model_control_client/include/**",
+        "/home/aries/catkin_ws/src/riro_robot/universal_robot/ur_kinematics/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}
